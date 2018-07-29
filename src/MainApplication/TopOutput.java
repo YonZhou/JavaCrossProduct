@@ -1,15 +1,18 @@
 package MainApplication;
 
+import java.awt.Font;
 import java.util.ArrayList;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class TopOutput extends JPanel{
-	private TopOutputLabel output;
+	private JLabel output;
 	
 	public TopOutput() {
-		output = new TopOutputLabel();
+		output = new JLabel();
+		output.setText("Nothing entered yet");
+		output.setFont(new Font("Arial Black", Font.PLAIN, 24));
 		drawPanel();
 		setVisible(true);
 	}
