@@ -41,7 +41,7 @@ public class FieldGrid extends JPanel{
 		outputAnswer = new ArrayList<String>();
 		float firstSum = getNum(1,0)*getNum(2,1) - getNum(2,0)*getNum(1,1);
 		float secondSum = getNum(2,0)*getNum(0,1) - getNum(0,0)*getNum(2,1);
-		float thirdSum = getNum(0,0)*getNum(1,1) - getNum(1,1)*getNum(0,1);
+		float thirdSum = getNum(0,0)*getNum(1,1) - getNum(1,0)*getNum(0,1);
 		outputAnswer.add(Float.toString(firstSum));
 		outputAnswer.add(Float.toString(secondSum));
 		outputAnswer.add(Float.toString(thirdSum));
